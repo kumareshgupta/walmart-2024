@@ -1,0 +1,91 @@
+
+
+React App ---------------------- API (endpoint)
+Frontend			Backend
+
+react-redux-works                 http://localhost:8888/contacts
+					(data.json)
+
+
+1. Entry Point (index.js)
+
+2. Store initialization 
+
+3. Component Mounting 
+
+4. Action Dispatch 
+
+
+
+Reducer - current state + action  => new state
+
+
+1. Action creator - one of the action creators will be called, as per user interaction
+2. Dispatch - Respective action creator makes an API call and dispatches an action (with a type and data) to the store
+3. Reducer - reducer will listen for the action, update the store based on action type and data, and return the new state.
+4. React Component - updated state will be reflected in the UI because React components are connected to the Redux store using mapStateToProps
+
+
+
+View --> Action --> Reducer --> Store --> View
+
+
+
+
+
+React hooks :-
+
+-introduced in React 16.8 
+-to allow functional components to use state and other React features without writing class components
+
+examples :
+
+1. useState : let you add state to functional components . It returns an array with two elements - the current state value and a function to update that state
+
+2. useEffect : handles side effects ( data fetching, network, browser DOM, animations, widgets written using a different UI library, and other non-React code) . 
+
+useEffect with Dependency Array
+useEffect(() => {}, []); 
+	first argument - a function where side effect code has to be written
+	second argument - optional dependency array , it tells when to re-run the effect
+
+	A) With an Empty Dependency Array [] : effect runs only once
+	B) With Dependencies [some_variable] : effect runs only when the value of some_variable changes 
+	
+		
+
+
+useEffect without Dependency Array
+useEffect(() => {});
+	- the effect runs after every render
+
+ 
+3. useContext
+4. useReducer
+5. useRef
+etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
